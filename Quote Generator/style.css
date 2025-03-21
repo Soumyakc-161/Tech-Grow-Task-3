@@ -1,0 +1,215 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #f75a75, #021356, #b6401f, #0b1a57);
+  background-size: 300% 300%;
+  animation: gradientBG 6s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wrapper {
+  width: 650px;
+  
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+@keyframes rotateBorder {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+header {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+content {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.quote-area i {
+  color: #000d42;
+}
+
+.quote-area .quote {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.author {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 18px;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.features ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.features ul li {
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #021356;
+  background: #fff;
+  border: 2px solid #021356;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+  color: #fff;
+  background: #021356;
+  transform: scale(1.1);
+}
+
+button {
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #021356, #6A93FF);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(90deg, #56FF96, #021356);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.notification-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.notification {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease-out;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.features ul li.favorite.active {
+  color: red;
+}
+
+.liked-quotes-view {
+  width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: #021356;
+  font-size: 24px;
+}
+
+.quotes-list {
+  margin-top: 40px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.quotes-list .quote-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quotes-list .quote-item:last-child {
+  border-bottom: none;
+}
+
+.quotes-list .quote-text {
+  font-size: 16px;
+  color: #333;
+  margin-right: 20px;
+}
+
+.quotes-list .quote-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.quotes-list .quote-actions i {
+  cursor: pointer;
+  color: #021356;
+  transition: color 0.3s ease;
+}
+
+.quotes-list .quote-actions i:hover {
+  color: #ff4757;
+}
