@@ -33,15 +33,14 @@ git clone https://github.com/Soumyakc-161/quote-generator.git
 Open in Browser: Simply open the index.html file in your preferred browser. No additional setup is required.
 
 🖼️ Screenshots
-Make your README more compelling by adding screenshots of your app's key features:
+
 
 Quote Generation
-
+![image alt](https://github.com/Soumyakc-161/Tech-Grow-Task-3/blob/e258d06843fdfe920e8c37a6cdcd86670e56c93f/welcome%20page.png)
+![image alt](https://github.com/Soumyakc-161/Tech-Grow-Task-3/blob/e258d06843fdfe920e8c37a6cdcd86670e56c93f/quote%20generator.png)
 Favorites Section
+![image alt](https://github.com/Soumyakc-161/Tech-Grow-Task-3/blob/e258d06843fdfe920e8c37a6cdcd86670e56c93f/Favorites.png)
 
-AI Voice in Action
-
-Social Media Integration
 
 🌐 Live Demo
 
